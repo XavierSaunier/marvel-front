@@ -1,1 +1,286 @@
 /* Other rules */
+.header {
+  background-color: red;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+}
+.character {
+  display: flex;
+  color: white;
+  flex-direction: column;
+  align-items: center;
+}
+
+.log {
+  display: flex;
+  justify-content: space-around;
+  flex: 1;
+}
+
+a:hover,
+a:visited,
+a:link,
+a:active {
+  text-decoration: none;
+}
+
+.header img {
+  height: 100px;
+}
+
+.search {
+  flex: 1;
+  margin: 0 10px;
+}
+
+.characterSheet {
+  background-color: black;
+}
+
+.comicsDisplay {
+  background-color: black;
+  display: flex;
+  overflow: hidden;
+  overflow-x: scroll;
+  color: white;
+}
+.signUp {
+  color: white;
+  background-color: black;
+  border: white solid 2px;
+  padding: 5px;
+  border-top-left-radius: 50%;
+  border-bottom-right-radius: 50%;
+  font-weight: bold;
+}
+
+.logIn {
+  color: white;
+  background-color: black;
+  border: white solid 2px;
+  padding: 5px;
+  border-top-left-radius: 50%;
+  border-bottom-right-radius: 50%;
+  font-weight: bold;
+  margin-right: 15px;
+}
+
+.comicShow {
+  border: white solid 2px;
+  padding: 5px 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.comicList {
+  display: flex;
+  flex-wrap: wrap;
+  margin: auto;
+}
+
+.comicLink {
+  border: white solid 2px;
+  color: white;
+}
+
+.comicLink > img {
+  width: 100%;
+}
+
+.comicList {
+  margin-top: 30px;
+}
+
+.control {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: black;
+  padding-bottom: 30px;
+}
+
+h3 {
+  color: white;
+}
+
+.limitSetter {
+  color: white;
+  background-color: black;
+}
+
+.currentLimit {
+  color: white;
+  background-color: red;
+}
+
+.control p {
+  background-color: red;
+  color: white;
+  padding: 4px 10px;
+  border-radius: 50%;
+  font-weight: bold;
+  border: white solid 2px;
+}
+
+.prev {
+  background-color: red;
+  color: white;
+
+  font-weight: bold;
+  border-top-left-radius: 50%;
+  border-bottom-left-radius: 50%;
+  padding-left: 30px;
+}
+
+.next {
+  background-color: red;
+  color: white;
+
+  font-weight: bold;
+  border-top-right-radius: 50%;
+  border-bottom-right-radius: 50%;
+  padding-right: 30px;
+}
+
+.switch {
+  background-color: red;
+  color: white;
+
+  font-weight: bold;
+  padding: 15px;
+  border-radius: 50%;
+}
+
+@media (min-width: 1024px) {
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .header img {
+    height: 100px;
+  }
+
+  .log {
+    max-width: 15%;
+  }
+  .search {
+    margin: 0 15%;
+  }
+
+  .comicShow {
+    width: 20%;
+  }
+  .comicList {
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+    background-color: black;
+    justify-content: center;
+    padding-top: 30px;
+  }
+
+  .comicLink {
+    width: 22%;
+    padding: 20px 1%;
+    border: white solid 2px;
+  }
+
+  .comicLink > img {
+    width: 100%;
+  }
+
+  .prev {
+    width: 130px;
+  }
+  .next {
+    width: 130px;
+  }
+  .switch {
+    font-size: large;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .header img {
+    height: 100px;
+  }
+  .comicShow {
+    width: 25%;
+  }
+
+  .log {
+    max-width: 20%;
+  }
+
+  .search {
+    margin: 0 10%;
+  }
+
+  .comicList {
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+    background-color: black;
+    justify-content: center;
+  }
+  .switch {
+    font-size: large;
+  }
+
+  .comicLink {
+    width: 30%;
+    padding: 15px 1%;
+    border: white solid 2px;
+  }
+
+  .prev {
+    width: 130px;
+  }
+  .next {
+    width: 130px;
+  }
+
+  .character img {
+    width: 80%;
+  }
+}
+
+@media (max-width: 768px) {
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .header img {
+    height: 50px;
+  }
+
+  .comicShow {
+    width: 45%;
+  }
+  .comicList {
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+    background-color: black;
+    justify-content: center;
+  }
+
+  .comicLink {
+    width: 45%;
+    padding: 15px 2%;
+    border: white solid 2px;
+  }
+  .character img {
+    width: 80%;
+  }
+}
